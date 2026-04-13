@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Pomodoro Focus Timer",
+    "slug": "pomodoro-focus-timer",
+    "version": "1.0.0",
+    "scheme": "pomodoro",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0F1923"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.gdg.pomodoro"
+    },
+    "android": {
+      "package": "com.gdg.pomodoro"
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ]
+  }
+}
