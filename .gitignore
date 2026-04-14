@@ -42,3 +42,5 @@ yarn-error.log*
 
 # Testing
 coverage/
+
+# Keep local generated artifacts out of version control
