@@ -2,7 +2,7 @@ import { View, Text, Pressable, Alert, StyleSheet } from 'react-native';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 
 export default function DetailScreen() {
-  const { name, role } = useLocalSearchParams();
+  const { name, role, detail } = useLocalSearchParams();
   const router = useRouter();
 
   return (
@@ -20,9 +20,7 @@ export default function DetailScreen() {
       {/* Info Card */}
       <View style={styles.card}>
         <Text style={styles.cardTitle}>GDG Member</Text>
-        <Text style={styles.cardText}>
-          Learning App Development at GDG Workshop.
-        </Text>
+        <Text style={styles.cardText}>{detail}</Text>
       </View>
 
       {/* Buttons */}

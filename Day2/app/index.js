@@ -3,8 +3,9 @@ import { View, Text, TextInput, FlatList, Pressable, StyleSheet } from 'react-na
 import { useRouter } from 'expo-router';
 
 const MEMBERS = [
-  { id: '1', name: 'Devaansh Kathuria', role: 'App Dev Lead' },
-  { id: '2', name: 'Priyanshu Singh Panda', role: 'Web Dev Lead' },
+  { id: '1', name: 'Devaansh Kathuria', role: 'App Dev Lead', detail: "App Dev Lead at GDG" },
+  { id: '2', name: 'Priyanshu Singh Panda', role: 'Web Dev Lead', detail: "Web Dev Lead at GDG" },
+  { id: "3", name: 'A Krishna Srikar', role: "GDG Co-Lead", detail: "THE ONE ABOVE ALL"},
 ];
 
 export default function HomeScreen() {
@@ -34,7 +35,7 @@ export default function HomeScreen() {
         renderItem={({ item }) => (
           <Pressable
             style={styles.card}
-            onPress={() => router.push(`/detail?id=${item.id}&name=${item.name}&role=${item.role}`)}
+            onPress={() => router.push(`/detail?id=${item.id}&name=${item.name}&role=${item.role}&detail=${item.detail}`)}
           >
             <View style={styles.avatar}>
               <Text style={styles.avatarText}>{item.name[0]}</Text>
@@ -48,7 +49,7 @@ export default function HomeScreen() {
         )}
         ItemSeparatorComponent={() => <View style={{ height: 10 }} />}
         ListEmptyComponent={
-          <Text style={styles.empty}>No members found 🔍</Text>
+          <Text style={styles.empty}>Member not found.</Text>
         }
       />
 
