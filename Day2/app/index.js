@@ -3,9 +3,12 @@ import { View, Text, TextInput, FlatList, Pressable, StyleSheet } from 'react-na
 import { useRouter } from 'expo-router';
 
 const MEMBERS = [
-  { id: '1', name: 'Devaansh Kathuria', role: 'App Dev Lead', detail: "App Dev Lead at GDG" },
-  { id: '2', name: 'Priyanshu Singh Panda', role: 'Web Dev Lead', detail: "Web Dev Lead at GDG" },
-  { id: "3", name: 'A Krishna Srikar', role: "GDG Co-Lead", detail: "THE ONE ABOVE ALL"},
+  { id: "1", name: 'A Krishna Srikar', role: "GDG Co-Lead", detail: "THE ONE ABOVE ALL"},
+  { id: '2', name: 'Devaansh Kathuria', role: 'App Dev Lead', detail: "App Dev Lead at GDG" },
+  { id: '3', name: 'Priyanshu Singh Panda', role: 'Web Dev Lead', detail: "Web Dev Lead at GDG" },
+  { id: "4", name: 'Prem Sonar', role: "Creative Lead", detail: "Wait for it!"},
+  { id: "5", name: 'Purvi Pandey', role: "Design Lead (Pehle wali)", detail: "Pehle wali Design Lead at GDG"},
+  { id: "6", name: 'Karan Phadtare', role: "Design Lead (doosre wala)", detail: "Doosre wala Design Lead at GDG"},
 ];
 
 export default function HomeScreen() {
