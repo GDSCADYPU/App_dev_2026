@@ -22,7 +22,6 @@ export default function HomeScreen() {
   return (
     <View style={styles.container}>
 
-      {/* Search Bar */}
       <TextInput
         style={styles.input}
         placeholder="Search members..."
@@ -31,7 +30,6 @@ export default function HomeScreen() {
         onChangeText={setSearch}
       />
 
-      {/* List */}
       <FlatList
         data={filtered}
         keyExtractor={item => item.id}

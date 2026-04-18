@@ -8,22 +8,18 @@ export default function DetailScreen() {
   return (
     <View style={styles.container}>
 
-      {/* Avatar */}
       <View style={styles.avatar}>
         <Text style={styles.avatarText}>{name?.[0]}</Text>
       </View>
 
-      {/* Info */}
       <Text style={styles.name}>{name}</Text>
       <Text style={styles.role}>{role}</Text>
 
-      {/* Info Card */}
       <View style={styles.card}>
         <Text style={styles.cardTitle}>GDG Member</Text>
         <Text style={styles.cardText}>{detail}</Text>
       </View>
 
-      {/* Buttons */}
       <Pressable
         style={styles.button}
         onPress={() => Alert.alert('Hello!', `You connected with ${name}!`)}
